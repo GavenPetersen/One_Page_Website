@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Koda & Roxy</title>
+	<link rel="Stylesheet" href="./CSS/one_page_website.css">
+</head>
+
+<body>
+
+	<!-- Nav -->
+
+	<ul>
+		<a href="#HOME" id="link">
+			<li>Home</li><a>
+				<a href="#Pictures" id="link">
+					<li>Photo Gallery</li><a>
+						<a href="#Videos" id="link">
+							<li>Video Gallery</li><a>
+								<a href="#Contact" id="link">
+									<li>Contact Us</li><a>
+	</ul>
+
+	<!-- End Nav -->
+
+	<!-- Home -->
+
+	<div id="HOME">
+		<h1>Meat Koda & Roxy</h1>
+		<p>This is about my dogs Kods & Roxy!
+		<p>
+	</div>
+
+	<!-- End Home -->
+
+	<!-- Photo Gallery -->
+
+	<div id="Pictures">
+		<h1>Photo Gallery</h1>
+	</div>
+
+	<!-- PHOTO-CONTAINER 1 (Koda) -->
+
+	<img src="./pictures/Koda.png" width="400" hight="400" alt="" onclick="openModal();currentSlide(1)"
+		class="hover-shadow">
+	<h3>Koda</h3>
+	<p>Info about what Koda is doing</p>
+
+	<!-- End Photo CONTAINER 1 -->
+
+	<!-- PHOTO-CONTAINER 2 (Rocy) -->
+
+	<img src="./pictures/Roxy.png" width="400" hight="400" alt="" onclick="openModal();currentSlide(2)"
+		class="hover-shadow">
+	<h3>Roxy</h3>
+	<p>Info about what Roxy is doing</p>
+
+	<!-- End Photo CONTAINER 2 -->
+
+	<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 2</div>
+				<img src="./pictures/Koda.png" style="width:50%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 2</div>
+				<img src="./pictures/Roxy.png" style="width:50%">
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Next/previous controls -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	<!-- End Photo Gallery -->
+
+	<!-- Video Gallery -->
+
+	<div id="Videos">
+		<h1>Video Gallery</h1>
+	</div>
+
+	<!-- Video-CONTAINER 1 (Koda) -->
+
+	<iframe width="560" height="315" src="https://www.youtube.com/watch?v=x2CaouIp1kE" frameborder="0"
+		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h3>Huskys</h3>
+	<p>Koda is a Husky.</p>
+
+	<!-- End Video CONTAINER 1 -->
+
+	<!-- Video-CONTAINER 2 (Rocy) -->
+
+	<iframe width="560" height="315" src="https://www.youtube.com/watch?v=MxaJb-fYR4M" frameborder="0"
+		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h3>German Sheapereds </h3>
+	<p>Rock is a German Sheapered.</p>
+
+	<!-- End Video CONTAINER 2 -->
+
+	<!-- End Video Gallery -->
+
+	<!-- Contact -->
+
+	<div id="Cntact">
+		<h1>Get in touch</h1>
+	</div>
+
+	<!-- Contact Fields -->
+
+	<form action="" method="get">
+		Name: <input type="text" name="Name"><br>
+		Email: <input type="text" name="Email"><br>
+		Phone Number: <input type="text" name="Phone Number"><br>
+		<input type="submit" Value="Submit">
+	</form>
+
+	<!-- End Contact Fields -->
+
+	<!-- End Contact -->
+
+	<!-- Footer -->
+
+	<footer>
+		<h3>Koda & Roxy</h3>
+	</footer>
+
+	<!-- End Footer -->
+<script src="./one_page_website.js"></script>
+</body>
+
+</html>
